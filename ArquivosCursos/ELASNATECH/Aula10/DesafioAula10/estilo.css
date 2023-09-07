@@ -1,0 +1,247 @@
+:root{
+    --cor-site: #F2529D;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+.maxWidth{
+    max-width: 90em;/*1440px*/
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+}
+
+.header_nav{
+    background-color: var(--cor-site);
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
+}
+
+.header_logo{
+    width: 5.9em;
+    height: 100%;
+    margin: 1em;
+}
+
+@media screen and (min-width: 48em){/*768px maior que*/
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .header_nav{
+        background-color: initial;
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        color: var(--cor-site);
+        border-radius: 5px;
+    }
+
+    .header_nav a:hover{
+        background-color: color-mix(in srgb, var(--cor-site), #ffffff 80%);
+    }
+}
+
+.trailer{
+    background-color: #E4F2EB;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5em;
+}
+
+.trailer div{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.trailer_titulo{
+    margin-top: 0;
+    padding-top: .5em;
+    color: var(--cor-site);
+}
+
+.trailer h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.trailer_paragrafo{
+    font-size: 1.1em;
+}
+
+.trailer_botao{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: var(--cor-site);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.trailer_botao:hover{
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
+}
+
+.trailer_video{
+    display: none;
+}
+
+@media screen and (min-width: 48em){/*768px maior que*/
+
+    .trailer_botao{
+        display: none;
+    }
+
+    .trailer{
+        background-image: url(imagens/fundo_header.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: initial;
+    }
+
+    .trailer_video {
+        display: block;
+    }
+
+    .trailer_video .tamanho{
+        border-radius: .8em;
+        margin-bottom: 1em;
+    }
+
+    .trailer_paragrafo{
+        margin-bottom: 2em;
+    }
+
+}
+
+.trailer_botao_article{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: var(--cor-site);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase
+}
+
+.trailer_botao_article:hover{
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
+}
+
+.main_content{
+    background-color: #e1d9d9;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.main_content div{
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.main_content_title{
+    color: var(--cor-site);
+}
+
+.icon_img{
+    width: 5.5em;
+}
+
+article .icon_img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+article .icon_img{
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.col{
+    flex: 1 0 auto;
+    /*
+    flex-grow = 1
+    vai aumentar seu tamanho se houver espaÃ§o
+
+    flex-shrink = 0
+    nÃĢo quero que o elemento diminua
+
+    flex-basis = auto
+    vai depender do width do prÃģprio elemento
+    */
+    width: 100%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+@media screen and (min-width: 48em){/*768px maior que*/
+    .col-6{
+        width: calc(50% - 2rem);
+    }
+}
+
+footer{
+    background-color: #F2529D;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+}
+
+.fonte{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8em;
+}

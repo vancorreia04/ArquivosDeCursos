@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image\x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilo.css">
+    
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="imagens/Logo.png" alt="" class="header-logo"></img>
+        <span id="hamburguer" class="material-symbols-outlined">
+            menu
+        </span>
+        <nav id="itens-menu" class="header-nav">
+            <ul>
+                <li><a href="#">Menu 01</a></li>
+                <li><a href="#">Menu 02</a></li>
+                <li><a href="#">Menu 03</a></li>
+                <li><a href="#">Menu 04</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="fundo-main">
+
+        </section>
+    </main>
+    <footer>
+        <div class="logos-footer">
+            
+           
+            <div>
+                <a href="#">
+                    <img src="imagens/watzap.png" alt="" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="imagens/facebook.png" alt="" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="imagens/stagram.png" alt="" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="imagens/likedin.png" alt="" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="imagens/github.png" alt="" class="tamanho">
+                </a>
+            </div>
+        </div>
+        <p class="texto-footer">Elas na Tech 2023 & copy Vanderleia</p>
+    </footer>
+    <script>
+        var hamburguer = document.getElementById('hamburger');
+        var itensMenu = document.getElementById('itens-menu');
+
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer() {
+            if (itensMenu.style.display == 'block') {
+                itensMenu.classList.remove('show');
+            } else {
+                itensMenu.classList.toggle('show');
+            }
+        }
+    </script>
+</body>
+
+</html>

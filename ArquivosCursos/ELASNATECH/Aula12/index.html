@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family#Montserrat:wight@300 display=swap" rel="stysheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Aula 12</title>
+</head>
+<body>
+    <header>
+<div class="logo fonte">Logo
+
+</div>
+<nav>
+    <ul>
+        <li>Menu 01</li>
+        <li>Menu 02</li>
+        <li>Menu 03</li>
+    </ul>
+</nav>
+    </header>
+    <main>
+        <h1 class="fonte_h1">DOM Document Object Model
+
+        </h1>
+        <div id="div01" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div id="div02" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima?
+
+        </div>
+        <div id="div03" class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, similique.
+        </div>
+    </main>
+<footer>Elas na Tech 2023 &copy Vanderleia</footer>
+    <script>
+        var v1 = document.getElementById('div01');
+        v1.style.backgroundColor = 'yellow';
+        v1.innerHTML = 'Elas na Tech 2023 '
+
+        var v2 = document.getElementsByClassName('content')[1];
+        v2.style.backgroundColor = 'pink';
+        v2.innerHTML = 'Javascript';
+
+        var v3 = document.querySelector('div#div03');
+        v3.style.backgroundColor = 'green';
+        v3.innerHTML = 'Aula 12';
+        /* */
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+html {
+    font-family: sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin: auto;
+    background-color:#0e0e0e;
+
+}
+
+.header-logo {
+    width: 5em;
+    height: auto;
+}
+
+#hamburguer{
+    background-color: #bc43f0;
+    color: #0e0e0e;
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+
+.header-nav {
+    background-color: #0e0e0e;
+display: none;
+}
+
+.header-nav.show{
+    display: block;
+}
+ul {
+    margin: 0;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+
+}
+.header-nav a{
+color: #bc43f0;
+text-decoration: none;
+display: block;
+padding: 1em;
+}
+
+.header-nav a:hover{
+    background-color: color-mix(in srgb, #bc43f0 #ffff 50% );
+    color: #c771ec;
+}
+
+@media screen and (min-width:48em) {
+    #hamburguer{
+        display: none;
+
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0e0e0e;
+    }
+    .header-logo{
+        margin-left: 2em;
+
+    }
+    .header-nav{
+        display: block;
+    }
+    .header-nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+    .header-nav li{
+        display: inline-block;
+
+    }
+    .header-nav a{
+        border-radius: 5px;
+
+    }
+
+    .header-nav a:hover{
+        background-color: #bc43f0;
+        color: #ffff;
+    }
+
+}
+.fundo-main{
+    background-image: url(imagens/fundo-gradiente-de-galaxia_23-2148983655.png);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+footer{
+    background-color: #c98af9;
+    padding: 1em;
+    text-align: center;
+}
+.logos-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.tamanho{
+    width: 2.5em;
+}
+.texto-footer{
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 0;
+    padding-top: .8rem;
+    color: #0D0D0D;
+}
+@media screen and (min-width:48em){
+    .logos-footer{
+flex-direction: row;
+justify-content: center;
+gap: 1.5em;
+    }
+}

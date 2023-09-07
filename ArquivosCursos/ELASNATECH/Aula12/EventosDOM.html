@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family#Montserrat:wight@300 display=swap" rel="stysheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Aula 12</title>
+</head>
+<body>
+    <header>
+<div class="logo fonte">Logo
+
+</div>
+<nav>
+    <ul>
+        <li>Menu 01</li>
+        <li>Menu 02</li>
+        <li>Menu 03</li>
+    </ul>
+</nav>
+    </header>
+    <main>
+        <h1 class="fonte_h1">DOM Document Object Model
+
+        </h1>
+        <div id="div01" class="content">Elas Na Tech 2023 Aula 12</div>
+        
+    </main>
+<footer>Elas na Tech 2023 &copy Vanderleia</footer>
+    <script>
+        var d = document.getElementById('div01');
+        d.addEventListener('click',clicar);
+        d.addEventListener('mouseout', sair);
+        function clicar(){
+            d.innerText = 'Você clicou aqui';
+            d.style.backgroundColor = 'pink';
+
+
+        }
+        function sair(){
+            d.innerText = 'Elas Na Tech 2023 Aula 12';
+            d.style.backgroundColor = '#21008';
+        }
+        /* */
+    </script>
+</body>
+
+</html>

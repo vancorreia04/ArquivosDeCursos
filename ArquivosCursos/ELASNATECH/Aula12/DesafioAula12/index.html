@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="fonte-h1">DOM Docment Object Model</h1>
+        <div id="div01" class="content">
+            <input type="number" name="txt01" id="txt01" class="txt">
+            <input type="number" name="txt02" id="txt02" class="txt">
+            <input type="button" value="+" id="btnSomar" class="txt">
+            <input type="button" value="-" id="btnSubtrair" class="txt">
+            <input type="button" value="*" id="btnMultiplicar" class="txt">
+            <input type="button" value="/" id="btnDividir" class="txt">
+            <input type="button" value="Limpar" id="btnLimpar" class="txt">
+            <div id="resultado">
+            Resultado
+        </div>
+    </div>
+
+    </main>
+    <footer>Elas na Tech 2023 &copy Vanderleia</footer>
+    <script>
+        var btnSomar = document.getElementById('btnSomar');
+                btnSomar.addEventListener('click', somar);
+
+                var btnSomar = document.getElementById('btnSubtrair');
+                btnSomar.addEventListener('click', subtrair);
+
+                var btnSomar = document.getElementById('btnMultiplicar');
+                btnSomar.addEventListener('click', multiplicar);
+
+                    
+                var btnSomar = document.getElementById('btnDividir');
+                btnSomar.addEventListener('click', dividir);            
+
+
+        function somar() {
+                var c1 = document.getElementById('txt01');
+                var c2 = document.getElementById('txt02');
+                var result = document.getElementById('resultado');
+
+                var nun1 = parseFloat(c1.value);
+                var nun2 = parseFloat(c2.value);
+                var resultado = nun1 + nun2;
+                result.innerText = 'A soma é :' + resultado;
+            }
+
+            function subtrair() {
+                var c1 = document.getElementById('txt01');
+                var c2 = document.getElementById('txt02');
+                var result = document.getElementById('resultado');
+
+                var nun1 = parseFloat(c1.value);
+                var nun2 = parseFloat(c2.value);
+                var resultado = nun1 - nun2;
+                result.innerText = 'A subtração é :' + resultado;
+            }
+
+            function multiplicar() {
+                var c1 = document.getElementById('txt01');
+                var c2 = document.getElementById('txt02');
+                var result = document.getElementById('resultado');
+
+                var nun1 = parseFloat(c1.value);
+                var nun2 = parseFloat(c2.value);
+                var resultado = nun1 * nun2;
+                result.innerText = 'A multiplicação é :' + resultado;
+            }
+
+            function dividir() {
+                var c1 = document.getElementById('txt01');
+                var c2 = document.getElementById('txt02');
+                var result = document.getElementById('resultado');
+
+                var nun1 = parseFloat(c1.value);
+                var nun2 = parseFloat(c2.value);
+                var resultado = nun1 / nun2;
+                result.innerText = 'A divisão é :' + resultado;
+            }
+
+            function Limpar() {
+                var c1 = document.getElementById('txt01');
+                var c2 = document.getElementById('txt02');
+                var result = document.getElementById('resultado');
+
+                c1.value = '';
+                c2.value = '';
+                result.innerText = 'Resultado';
+            }
+
+
+
+    </script>
+</body>
+
+</html>

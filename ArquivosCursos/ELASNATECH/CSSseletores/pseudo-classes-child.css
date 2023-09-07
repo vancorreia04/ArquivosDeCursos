@@ -1,0 +1,22 @@
+
+body{
+    
+}
+    p:first-child{
+        color: red;
+    }
+p:last-child{
+    color: rgb(238, 160, 44);
+}
+
+p:nth-child(3){
+background-color: rgb(255, 72, 0);
+}
+
+p:first-of-type{
+    background-color: chartreuse;
+}
+
+p:last-of-type{
+    background-color: black;
+}

@@ -1,0 +1,134 @@
+*html{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho{
+    background-color:#212223 ;
+    padding: 1.2em 0;
+    position: relative;
+}
+.cabecalho nav{
+
+    border-radius: 50%;
+}
+.cabecalho nav a:hover{
+    background-color:#0D9FD9 ;
+    color: black;
+}
+.sobre{
+   max-width: 20em;
+
+    border-radius: 50%;
+    border: 2px solid #2155BF ;
+   
+}
+.sobreMim{
+    background-color:#d1f0f7 ;
+}
+.sobreMim h2{
+   
+    color: #2155BF;
+}
+.conteudo{
+    width: 15em;
+}
+footer{
+    background-color: #0D9FD9;
+padding: 1em;
+align-items: center;
+}
+
+.logos-rodape{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    
+}
+.tamanho{
+    width:4em;
+display: flex;
+}
+.tamanho{
+    height: 100%;
+}
+.texto-rodape{
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin: 0;
+    padding-top: 0.15em;
+    color: black;
+    align-items: center;
+}
+
+
+/* 
+body{
+   
+}
+.cabecalho{
+background-color: #233f56;
+    padding: 1.2em 0; 
+    position: relative;
+}
+.cabecalho-nav {
+   display: block;
+   text-decoration: none;
+   
+}
+
+#099AD5
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+
+}
+
+
+.sobre{
+    max-width:300px ;
+    border-radius: 50%;
+    border: 2px solid#1771BF ;
+}
+.sobreMim{
+    background-color: #dbe8f4;
+}
+.sobreMim h2{
+    color: #1771BF;
+}
+
+
+
+.header-nav.show{
+    display: block;
+}
+ul {
+    margin: 0;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+
+}
+.header-nav a{
+color: #bc43f0;
+text-decoration: none;
+display: block;
+padding: 1em;
+}
+
+.header-nav a:hover{
+    background-color: color-mix(in srgb, #bc43f0 #ffff 50% );
+    color: #c771ec;
+}
+
+*/
